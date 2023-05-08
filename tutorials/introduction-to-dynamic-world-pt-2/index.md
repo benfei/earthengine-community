@@ -50,7 +50,7 @@ built-up area. We start by creating a mode composite for the
 given time period.
 
 ```js
-var counties = ee.FeatureCollection('TIGER/2016/Counties');
+var counties = ee.FeatureCollection('TIGER/2018/Counties');
 var filtered = counties.filter(ee.Filter.eq('NAMELSAD', 'Dane County'));
 var geometry = filtered.geometry();
 Map.centerObject(geometry, 10);
