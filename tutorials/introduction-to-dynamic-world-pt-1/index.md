@@ -303,7 +303,7 @@ For this tutorial, we will use the
 dataset to extract the boundary for Dane County, Wisconsin.
 
 ```js
-var counties = ee.FeatureCollection('TIGER/2016/Counties');
+var counties = ee.FeatureCollection('TIGER/2018/Counties');
 var filtered = counties.filter(ee.Filter.eq('NAMELSAD', 'Dane County'));
 var geometry = filtered.geometry();
 Map.centerObject(geometry, 10);
